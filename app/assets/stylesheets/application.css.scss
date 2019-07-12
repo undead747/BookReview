@@ -1,0 +1,355 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+a:-webkit-any-link {
+    text-decoration: none;
+    cursor: auto;
+}
+.edit-img-bookindex{
+  width: 200px !important;
+  height: 370px !important;
+}
+.edit-listbook-bookindex{
+  width: 1300px;
+}
+.flex-container{
+  display: flex;
+}
+.search-button{
+  width: 70px !important;
+  margin-left: 100px !important;
+  background: darkorange !important;
+  border-radius: 5px;
+}
+.search-box{
+  margin-right: 100px;
+}
+.edit-icon-book-show{
+  margin-top: 15px !important;
+}
+.review-box{
+  width: 70%;
+  height: 50%;
+  margin-left: 300px;
+  margin-bottom: 70px;
+}
+.upsell-product{
+  display: -webkit-flex;
+}
+.notification-icon{
+ font-size: 30px;
+ margin-top: 10px;
+}
+.form{
+  margin-left: 55px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+
+}
+.user-rating-padding{
+  margin-left: 15px;
+}
+.book-review-box{
+background-color: #f8f6f3;
+border-radius: 4px;
+}
+.public-text-background-color{
+ background-color: white;
+}
+.comment-book-box-background-color{
+  background-color: white;
+}
+.review-book-button{
+margin-top: 20px;
+padding-left: initial;
+}
+.review-book-button-margin{
+  margin-right: 8px;
+}
+.review-book-content{
+  margin-top: 8px;
+}
+.comment-img-edit{
+  width: 8%;
+height: 75px;
+border-radius: 100%;
+}
+.comment-book-box{
+border: 2px solid #e6e0d7;
+margin-top: 47px;
+padding: 9px;
+background-color: #f8f6f3;
+border-radius: 3px;
+}
+.read-online{
+width: 50%;
+margin-left: 450px;
+margin-bottom: 100px;
+}
+.header-after-message-box{
+border-top: 1px solid #c2c2c2;
+padding-top: 5px;
+border-bottom: 1px solid #c2c2c2;
+padding-bottom: 5px;
+}
+.comment-box-img-edit{
+width: 100%;
+height: 70%;
+border-radius: 5%;
+}
+.mini-cart-size{
+  width: 380px;
+}
+.time-header-after-message-box{
+  margin-left: 41px;
+}
+.user-name-mesage-box{
+  font-weight: bold;
+}
+.test-decoration{
+text-decoration: none !important;
+}
+.user-page-edit{
+  margin: 13px;
+}
+.btn-follows-custom{
+  background-color: #2e6da4;
+
+  border-radius: 10px;
+
+  width: 110px;
+
+  height: 45px;
+
+  color: aliceblue;
+
+  font-size: initial;
+}
+.btn-delete-custom{
+  background-color: red;
+
+  border-radius: 5px;
+
+  color: aliceblue;
+
+  font-size: initial;
+
+  text-decoration: none !important;
+}
+.follow-user{
+  border-radius: 5px;
+
+  margin-bottom: 7px;
+}
+.user-following{
+width: 1757px;
+border: 2px solid #cfdae4;
+border-radius: 10px;
+background-color: #d4dade;
+}
+.follwing-user{
+  width: 1757px;
+  border: 2px solid #cfdae4;
+  border-radius: 10px;
+  background-color: #d4dade;
+  margin-bottom: 5px;
+}
+.user-list{
+width: 300px;
+height: 300px;
+}
+.user-img-list{
+  width: 235px !important;
+  height: 230px !important;
+  border-radius: 2px !important;
+}
+
+.delete-button{
+  width: 500px;
+  height: 500px;
+}
+//user-page-template
+//////////////////////////////////////////////////////////
+.card.hovercard .useravatar img {
+  margin-top: 140px;
+ }
+
+ .card.hovercard {
+  height: 300px;
+
+}
+
+.text{
+    text-decoration: none;
+}
+.book{
+   height: 350px;
+   width: 250px;
+
+}
+.book-favorite{
+	height: 200px;
+	width: 150px;
+
+ }
+.book-show{
+  height: 480px;
+  width: 325px;
+}
+
+
+
+
+
+
+.card {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card.hovercard .card-background {
+    height: 130px;
+}
+.card-background img {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+}
+.card.hovercard .useravatar {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .useravatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: #262626;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+
+.btn-grey{
+    background-color:#D8D8D8;
+    color:#FFF;
+}
+.rating-block{
+    background-color:#FAFAFA;
+    border:1px solid #EFEFEF;
+    padding:15px 15px 20px 15px;
+    border-radius:3px;
+}
+.bold{
+    font-weight:700;
+}
+.padding-bottom-7{
+    padding-bottom:7px;
+}
+
+.review-block{
+    background-color:#FAFAFA;
+    border:1px solid #EFEFEF;
+    padding:15px;
+    border-radius:3px;
+    margin-bottom:15px;
+}
+.review-block-name{
+    font-size:12px;
+    margin:10px 0;
+}
+.review-block-date{
+    font-size:12px;
+}
+.review-block-rate{
+    font-size:13px;
+    margin-bottom:15px;
+}
+.review-block-title{
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+.review-block-description{
+    font-size:13px;
+}
+.img-rounded{
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+
+}

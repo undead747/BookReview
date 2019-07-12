@@ -1,0 +1,48 @@
+			<div class="review-rating" data-score="<%= review.rating%>"></div>
+			<div class="comment-reply-wrap mt-50">
+				<ul>
+					<li>
+						<div class="public-comment">
+							<div class="comment-img">
+								<a href="<%= user_path(review.user) %>"><img src="<%= review.user.user_img.url(:user_index)%>" alt="man" /></a>
+							</div>
+							<div class="public-text public-text-background-color">
+								<div class="single-comm-top">
+									<div class="upsell-product">
+									<a href="#"><%= review.user.name %></a>
+									<div class="rating-summary user-rating-padding">
+										<% @number = 0 %>
+										<% while @number < review.rating %>
+										<i class="fa fa-star"></i>
+										<% @number += 1 %>
+										<% end %>
+									</div>
+									</div>
+								</div>
+								<p class="review-book-content"><%= review.comment %></p>
+
+							<% if logged_in? %>
+							<% if review.user_id == current_user.id %>
+									<div class="links btn-group review-book-button">
+										<%= link_to "Edit", edit_book_review_path(review.book, review),class:"review-book-button-margin"%>
+										<%= link_to "Delete", book_review_path(review.book, review), method: :delete, data: { confirm: "Are you sure?" },class:"review-book-button-margin"%>
+										<span><%="#{time_ago_in_words(review.created_at)} ago"%></span>
+									</div>
+								<% end %>
+							<% end %>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+jQuery('.review-rating').raty({
+	readOnly: true,
+	score: function() {
+		return jQuery(this).attr('data-score');
+	},
+	path: '/assets/'
+});
+});
+</script>

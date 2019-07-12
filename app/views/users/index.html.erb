@@ -1,0 +1,9 @@
+<div class="flex-container">
+<% @users.all.each do |user| %>
+<div class="user-list">
+<a href="<%= user_path(user)%>">
+<img alt="" src="<%= user.user_img.url(:user_index) %>" class="user-img-list">
+</a>
+</div>
+<% end %>
+</div>

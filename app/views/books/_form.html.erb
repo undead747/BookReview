@@ -1,0 +1,11 @@
+<%= simple_form_for @book, :html => { :multipart => true } do |f| %>
+	<%= select_tag(:category_id, options_for_select(Category.all.map{ |c| [c.name , c.id ] }), :prompt => 'Select a category', :class => 'form-control form-control-lg') %>
+	<br />
+	<%= f.file_field :book_img, :class =>"form-control-file" %>
+	<br />
+	<%= f.input :title, label: "Tiêu đề sách",error: 'Username is mandatory, please specify one' %>
+	<%= f.input :description, label: "Miêu tả" %>
+	<%= f.input :author, label: "Tác giả" %>
+	<%= f.input :path_read, label: "Link sách drive" %>
+	<%= f.button :submit, :class => 'btn-custom2' %>
+<% end %>

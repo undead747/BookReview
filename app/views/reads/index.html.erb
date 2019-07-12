@@ -1,0 +1,36 @@
+<div class="row">
+	<div class="read-online">
+		<div class="wn__single__product">
+			<div class="row">
+				<div class="col-lg-6 col-12">
+					<h2><%=@book.title%></h2>
+					<h5>by <%=@book.author%></h5>
+					<div class="wn__fotorama__wrapper">
+						<iframe src="<%=@book.path_read%>" width="840" height="1000"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+
+<script>
+	$('.review-rating').raty({
+		readOnly: true,
+		score: function() {
+			return $(this).attr('data-score');
+		},
+		path: '/assets/'
+	});
+</script>
+
+<script>
+	$('.average-review-rating').raty({
+		readOnly: true,
+		path: '/assets/',
+		score: function() {
+			return $(this).attr('data-score')
+		}
+	});
+</script>
