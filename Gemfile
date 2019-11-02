@@ -24,7 +24,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bcrypt', platforms: :ruby
 gem "sprockets-rails", :require => "sprockets/railtie"
 gem 'activeadmin', '~> 1.2', '>= 1.2.1'
-gem 'devise', '~> 4.4', '>= 4.4.3'
+gem 'devise', '~> 4.7'
 gem "paperclip", "~> 6.0.0"
 gem "closure_tree"
 gem 'acts_as_tree', '~> 2.4'
