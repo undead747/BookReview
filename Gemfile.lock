@@ -98,7 +98,7 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     concurrent-ruby (1.1.5)
-    crass (1.0.4)
+    crass (1.0.5)
     devise (4.6.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -147,7 +147,7 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
-    loofah (2.2.3)
+    loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -163,9 +163,9 @@ GEM
     multi_json (1.13.1)
     nio4r (2.3.1)
     nodejs-rails (0.0.1)
-    nokogiri (1.10.1)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.1-x86-mingw32)
+    nokogiri (1.10.5-x86-mingw32)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     owl_carousel-rails (0.0.1)
@@ -297,7 +297,7 @@ DEPENDENCIES
   jquery-rails (~> 4.3, >= 4.3.1)
   nodejs-rails (~> 0.0.1)
   owl_carousel-rails
-  paperclip (~> 4.3, >= 4.3.6)
+  paperclip (~> 6.0.0)
   puma (~> 3.7)
   rails (~> 5.1.5)
   sass-rails (~> 5.0)
