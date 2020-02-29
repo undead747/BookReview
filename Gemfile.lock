@@ -204,7 +204,7 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (12.3.2)
+    rake (13.0.1)
     ransack (2.1.1)
       actionpack (>= 5.0)
       activerecord (>= 5.0)
@@ -297,7 +297,7 @@ DEPENDENCIES
   jquery-rails (~> 4.3, >= 4.3.1)
   nodejs-rails (~> 0.0.1)
   owl_carousel-rails
-  paperclip (~> 4.3, >= 4.3.6)
+  paperclip (~> 6.0.0)
   puma (~> 3.7)
   rails (~> 5.1.5)
   sass-rails (~> 5.0)
