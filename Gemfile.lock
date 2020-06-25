@@ -178,7 +178,7 @@ GEM
       mimemagic (= 0.3.0)
     public_suffix (3.0.3)
     puma (3.12.1)
-    rack (2.0.6)
+    rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.1.6.2)
@@ -297,7 +297,7 @@ DEPENDENCIES
   jquery-rails (~> 4.3, >= 4.3.1)
   nodejs-rails (~> 0.0.1)
   owl_carousel-rails
-  paperclip (~> 4.3, >= 4.3.6)
+  paperclip (~> 6.0.0)
   puma (~> 3.7)
   rails (~> 5.1.5)
   sass-rails (~> 5.0)
